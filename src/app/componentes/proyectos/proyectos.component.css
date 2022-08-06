@@ -1,14 +1,28 @@
-.row{
-    padding: 20px;
-    background-color: rgb(235,235,236);
+.row {
+    padding: 30px;
+    background-color: rgb(235, 235, 236);
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 30px;
+    font-family: Garamond;
 }
-.contenedor{
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+.contenedor {
     width: auto;
 }
-.parte1, .parte2{
+
+.parte1,
+.parte2 {
+    padding-top: 30px;
     display: inline-block;
     text-align: justify;
 }
-.img-proyecto{
+
+.img-proyecto {
     box-shadow: 10px 10px 30px black;
 }

@@ -1,35 +1,53 @@
-.row{
-    padding: 10px;
-}
-div{
-    background-color: rgb(235,235,236);
-    text-align: center;
+.row {
+    padding: 60px;
 }
 
-/*etiqueta foto de perfil*/
-@media(min-width: 576px){
-    #fotoperfil{
-       position: absolute; 
-       width: 15%;
-       border-radius: 100%;
-       box-shadow: 3px 3px 3px rgb(28, 8, 0);
-       left: 3%;
-       top: 330px;
-    }
+div {
+    background-color: rgb(235, 235, 236);
+    text-align: center;
+    padding-left: 20px;
 }
-@media(max-width: 575px){
-    #fotoperfil{
-       position: absolute; 
-       width: 35%;
-       border-radius: 100%;
-       box-shadow: 3px 3px 3px rgb(28, 8, 0);
-       left: 33%;
-       top: 550px;
-    }
+
+span {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 30px;
+    font-family: Garamond;
 }
-   
-/*etiqueta nombre*/
+
+h1 {
+    font-weight: bold;
+}
+
 #nombre {
     font-weight: bold;
-    margin-top: 30%;
-} 
+    margin-top: 10%;
+    font-size: 30px;
+    letter-spacing: -0.1px;
+    line-height: 30px;
+    font-family: Garamond;
+}
+
+
+@media(min-width: 576px) {
+    #fotoperfil {
+        position: absolute;
+        width: 16%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(38, 0, 20);
+        left: 4%;
+        top: 550px;
+    }
+}
+
+@media(max-width: 575px) {
+    #fotoperfil {
+        position: absolute;
+        width: 35%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(38, 8, 20);
+        left: 33%;
+        top: 510px;
+    }
+}

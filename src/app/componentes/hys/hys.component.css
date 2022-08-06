@@ -1,4 +1,12 @@
-.row{
-    background-color:rgb(235,235,236);
-    padding: 20px;
+.row {
+    background-color: rgb(235, 235, 236);
+    padding: 30px;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 30px;
+    font-family: Garamond;
+}
+
+h1 {
+    font-weight: bold;
 }
