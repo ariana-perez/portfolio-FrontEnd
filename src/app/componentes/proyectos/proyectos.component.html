@@ -1,12 +1,30 @@
 <div class="row">
     <h1>Proyectos realizados</h1>
-    <div class="contenedor">
-        <div class="col-sm-12 col-md-7 col-lg7 parte1">
-            <h3>Portfolio web</h3>
-            <p> Proyecto final de Argentina Programa - La aplicación consiste en el desarrollo de un portfolio web que sea de arquitectura distribuida, el cual contiene diseño de interfaz de usuario, una base de datos y las API's necesarias para proveer la información a través de internet.</p>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-            <img src="../../../assets/Banner1.jpg" class="img-fluid img-proyecto" alt="img-proyecto">
-        </div>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
+          Nuevo Proyecto
+        </button>
+      </div>
+
+
+      <div class="col lg 1"></div>
+      <div class="col-lg-11">
+        <table class="table">
+          <tbody>
+            <tr *ngFor="let Proyectos of proy">
+              <td><h3>{{Proyectos.nombreP}}</h3></td>
+              <td>{{Proyectos.descripcionP}}</td>
+              <td *ngIf="isLogged">
+                <button class="btn btn-dark" routerLink="/editproy/{{Proyectos.id}}">
+                <i class="bi bi-pencil">EDITAR</i></button>
+              </td>
+
+              <td *ngIf="isLogged">
+                <button class="btn btn-dark" (click)="delete(Proyectos.id)">
+                <i class="bi bi-trash">BORRAR</i></button>
+              </td>
+            </tr> 
+          </tbody> 
+        </table>
+      </div>
     </div>
-</div>
