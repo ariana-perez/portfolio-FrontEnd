@@ -16,3 +16,7 @@ h3 {
     display: inline;
     font-weight: bold;
 }
+
+table{
+    margin: 20px;
+}

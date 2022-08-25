@@ -1,40 +1,42 @@
 <div class="row">
   <h1> Hard & Soft skills</h1>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress [percent]="85" [radius]="80" [title]="'HTML'" [titleColor]="'black'" [titleFontSize]="'30px'"
-      [showSubtitle]="false" [showUnits]="false" [outerStrokeWidth]="10" [innerStrokeWidth]="2"
-      [outerStrokeColor]="'#7F0064'" [innerStrokeColor]="'grey'" [animation]="true" [animationDuration]="700">
-    </circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress [percent]="85" [radius]="80" [title]="'CSS'" [titleColor]="'black'" [titleFontSize]="'30px'"
-      [showSubtitle]="false" [showUnits]="false" [outerStrokeWidth]="10" [innerStrokeWidth]="2"
-      [outerStrokeColor]="'#7F0064'" [innerStrokeColor]="'grey'" [animation]="true" [animationDuration]="700">
-    </circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress [percent]="80" [radius]="80" [title]="'JS'" [titleColor]="'black'" [titleFontSize]="'30px'"
-      [showSubtitle]="false" [showUnits]="false" [outerStrokeWidth]="10" [innerStrokeWidth]="2"
-      [outerStrokeColor]="'#7F0064'" [innerStrokeColor]="'grey'" [animation]="true" [animationDuration]="700">
-    </circle-progress>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">
+      Nueva Skill
+    </button>
   </div>
 
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress [percent]="75" [radius]="80" [title]="'Edición'" [titleColor]="'black'" [titleFontSize]="'30px'"
-      [showSubtitle]="false" [showUnits]="false" [outerStrokeWidth]="10" [innerStrokeWidth]="2"
-      [outerStrokeColor]="'#7F0064'" [innerStrokeColor]="'grey'" [animation]="true" [animationDuration]="700">
+
+  <div *ngFor= "let skill of skill" class="text-center col-sm-4 col-md-4 col-lg-4">
+    
+  
+    <circle-progress class="circle"
+      [percent]="skill.descripcionS"
+      [radius]="70"
+      [showUnits]="false"
+      [title]="skill.nombreS"
+      [titleColor]="'black'" 
+      [titleFontSize]="'20px'"
+      [showSubtitle]="false"
+      [subtitle]="skill.nombreS" 
+      [outerStrokeWidth]="10"
+      [innerStrokeWidth]="2"
+      [outerStrokeColor]="'#7F0064'"
+      [innerStrokeColor]="'gray'"
+      [animation]="true"
+      [animationDuration]="700"
+    >
     </circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress [percent]="90" [radius]="80" [title]="'Social'" [titleColor]="'black'" [titleFontSize]="'30px'"
-      [showSubtitle]="false" [showUnits]="false" [outerStrokeWidth]="10" [innerStrokeWidth]="2"
-      [outerStrokeColor]="'#7F0064'" [innerStrokeColor]="'grey'" [animation]="true" [animationDuration]="700">
-    </circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4">
-    <circle-progress [percent]="70" [radius]="80" [title]="'Ingles'" [titleColor]="'black'" [titleFontSize]="'30px'"
-      [showSubtitle]="false" [showUnits]="false" [outerStrokeWidth]="10" [innerStrokeWidth]="2"
-      [outerStrokeColor]="'#7F0064'" [innerStrokeColor]="'grey'" [animation]="true" [animationDuration]="700">
-    </circle-progress>
-  </div>
+    
+
+    <div *ngIf="isLogged">
+      <button  class="btn btn-dark" routerLink="/editskill/{{skill.id}}">
+      <i class="bi bi-pencil"></i> EDITAR</button>
+      </div>
+    
+    <div *ngIf="isLogged">
+      <button class="btn btn-dark" (click)="delete(skill.id)">
+      <i class="bi bi-trash"></i> BORRAR</button>
+      </div>
+
 </div>

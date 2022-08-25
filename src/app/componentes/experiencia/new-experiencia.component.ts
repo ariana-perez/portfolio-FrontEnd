@@ -19,17 +19,15 @@ constructor(private sExperiencia: SExperienciaService, private router: Router) {
 
   onCreate(): void {
     const expe = new Experiencia(this.nombreE, this.descripcionE);
-    this.sExperiencia.save(expe).subscribe(
-     {
-      next: data => {
+    this.sExperiencia.save(expe).subscribe( 
+      data => {
         alert("Experiencia añadida");
         this.router.navigate(['']);
-       },
-       error:err => {
+       }, err => {
         alert("Falló");
         this.router.navigate(['']);
      } 
-   });
+   );
     
   }
 
