@@ -1,0 +1,92 @@
+.row {
+    padding: 20px;
+    letter-spacing: -0.1px;
+    line-height: 20px;
+    font-family: Garamond;
+}
+
+div {
+    background-color: rgb(235, 235, 236);
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+@media(min-width: 576px) {
+    #fotoperfil {
+        position: absolute;
+        display: block;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(31, 31, 31);
+        left: 42.5%;
+        top: 550px;
+        
+    }
+}
+
+@media(max-width: 575px) {
+    #fotoperfil {
+        position: absolute;
+        display: block;
+        width: 35%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px rgb(31, 31, 31);
+        left: 33%;
+        top: 630px
+    }
+}
+
+@media(min-width: 576px) {
+    #nombre{
+        font-weight: bold;
+        margin-top: 6%;
+        font-size: 30px;
+        letter-spacing: -0.1px;
+        line-height: 20px;
+        font-family: Garamond;
+        
+    }
+}
+
+@media(max-width: 575px) {
+    #nombre{
+        font-weight: bold;
+        margin-top: 18%;
+        font-size: 30px;
+        letter-spacing: -0.1px;
+        line-height: 20px;
+        font-family: Garamond;
+        
+    }
+}
+
+
+@media(min-width: 576px) {
+.table {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 25px;
+    font-family: Garamond;
+    margin-left: 18%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+   
+}}
+
+@media(max-width: 575px) {
+    .table {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: -0.1px;
+        line-height: 25px;
+        font-family: Garamond;
+        margin-left: auto;
+        margin-top: 5%;
+    }
+}
+
+

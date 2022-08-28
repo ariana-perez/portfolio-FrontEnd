@@ -1,0 +1,17 @@
+.row{
+ 
+    padding: 15%;
+    letter-spacing: -0.1px;
+    line-height: 20px;
+    font-family: Garamond;
+}
+
+label{
+    font-weight: bold;
+    font-size: 20px; 
+   
+}
+
+button{
+    margin-top: 20px;
+}
