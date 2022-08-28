@@ -1,5 +1,6 @@
 <div class="row">
-    <h1>Proyectos realizados</h1>
+    <h1><i class="bi bi-ui-checks"></i> Proyectos realizados </h1>
+
     <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/nuevoproy" *ngIf="isLogged">
           Nuevo Proyecto
@@ -7,13 +8,14 @@
       </div>
 
 
-      <div class="col lg 1"></div>
-      <div class="col-lg-11">
+   <div class="col lg 1"></div>
+    <div class="col-lg-11">
         <table class="table">
           <tbody>
             <tr *ngFor="let Proyectos of proy">
-              <td><h3>{{Proyectos.nombreP}}</h3></td>
+              <td><h4>{{Proyectos.nombreP}}</h4></td>
               <td>{{Proyectos.descripcionP}}</td>
+              
               <td *ngIf="isLogged">
                 <button class="btn btn-dark" routerLink="/editproy/{{Proyectos.id}}">
                 <i class="bi bi-pencil">EDITAR</i></button>

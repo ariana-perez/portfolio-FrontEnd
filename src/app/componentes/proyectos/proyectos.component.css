@@ -5,13 +5,20 @@
     letter-spacing: -0.1px;
     line-height: 30px;
     font-family: Garamond;
+    padding-bottom: 140px;
 }
 
-h1,
-h3 {
+h1{
+    font-weight: bold; 
+    margin-top: 20px;
+}
+
+h4 {
     font-weight: bold;
+    margin: 10px;
+    
 }
 
-table {
-    margin: 20px;
+table{
+    margin: 30px;
 }

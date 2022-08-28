@@ -1,0 +1,20 @@
+<div class="container-fluid" *ngIf="about">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreA">Titulo</label>
+                    <input type="text" class="form-control" id="nombreA" name="nombreA" [(ngModel)]="about.nombreA" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionA">Breve descripción</label>
+                    <input type="text" class="form-control" id="descripcionA" name="descripcionA" [(ngModel)]="about.descripcionA" required>
+                </div>
+                <button type="submit" class="btn btn-dark">
+                    Actualizar
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>

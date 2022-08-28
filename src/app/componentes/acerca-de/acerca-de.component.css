@@ -1,53 +1,92 @@
 .row {
-    padding: 60px;
+    padding: 20px;
+    letter-spacing: -0.1px;
+    line-height: 20px;
+    font-family: Garamond;
 }
 
 div {
     background-color: rgb(235, 235, 236);
     text-align: center;
-    padding-left: 20px;
-}
-
-span {
-    text-align: center;
-    font-size: 16px;
-    letter-spacing: -0.1px;
-    line-height: 30px;
-    font-family: Garamond;
 }
 
 h1 {
     font-weight: bold;
 }
 
-#nombre {
-    font-weight: bold;
-    margin-top: 10%;
-    font-size: 30px;
-    letter-spacing: -0.1px;
-    line-height: 30px;
-    font-family: Garamond;
-}
-
-
 @media(min-width: 576px) {
     #fotoperfil {
         position: absolute;
-        width: 16%;
+        display: block;
+        width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px rgb(38, 0, 20);
-        left: 4%;
-        top: 600px;
+        box-shadow: 3px 3px 3px rgb(31, 31, 31);
+        left: 42.5%;
+        top: 550px;
+        
     }
 }
 
 @media(max-width: 575px) {
     #fotoperfil {
         position: absolute;
+        display: block;
         width: 35%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px rgb(38, 8, 20);
+        box-shadow: 3px 3px 3px rgb(31, 31, 31);
         left: 33%;
-        top: 610px;
+        top: 630px
     }
 }
+
+@media(min-width: 576px) {
+    #nombre{
+        font-weight: bold;
+        margin-top: 6%;
+        font-size: 30px;
+        letter-spacing: -0.1px;
+        line-height: 20px;
+        font-family: Garamond;
+        
+    }
+}
+
+@media(max-width: 575px) {
+    #nombre{
+        font-weight: bold;
+        margin-top: 18%;
+        font-size: 30px;
+        letter-spacing: -0.1px;
+        line-height: 20px;
+        font-family: Garamond;
+        
+    }
+}
+
+
+@media(min-width: 576px) {
+.table {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 25px;
+    font-family: Garamond;
+    margin-left: 18%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+   
+}}
+
+@media(max-width: 575px) {
+    .table {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: -0.1px;
+        line-height: 25px;
+        font-family: Garamond;
+        margin-left: auto;
+        margin-top: 5%;
+    }
+}
+
+

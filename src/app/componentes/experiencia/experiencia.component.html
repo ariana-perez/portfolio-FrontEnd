@@ -1,5 +1,5 @@
 <div class="row">
-    <h1>Experiencia laboral</h1>
+    <h1><i class="bi bi-person-lines-fill"></i> Experiencia laboral </h1>
 
     <div class="col-lg-2">
         <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
@@ -15,7 +15,7 @@
                 <tr *ngFor="let Experiencia of expe">
                    
                     <td>
-                        <h3>{{Experiencia.nombreE}}</h3>
+                        <h4>{{Experiencia.nombreE}} </h4>
                     </td>
 
                     <td>{{Experiencia.descripcionE}}</td>
