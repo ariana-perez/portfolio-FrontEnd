@@ -8,7 +8,7 @@ import { Skills } from '../model/skills';
 })
 
 export class SSkillsService {
-  skillURL = 'http://localhost:8080/skill/';
+  skillURL = 'https://backendaap.herokuapp.com/skill/';
 
   constructor(private httpClient: HttpClient) { }
 
